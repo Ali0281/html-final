@@ -1,0 +1,172 @@
+<html>
+
+<head>
+    <style>
+        a {
+            text-decoration: none;
+        }
+        
+        .table {
+            width: 100%;
+        }
+        
+        .link {
+            color: white;
+            transition-duration: 100ms;
+            font-size: larger;
+            text-shadow: 0px 0px 0px;
+        }
+        
+        .link:hover {
+            font-size: x-large;
+            text-shadow: 0px 0px 5px #ffffff;
+        }
+        
+        .nav {
+            background: linear-gradient(90deg, rgba(140, 37, 83, 1) 0%, rgba(2, 75, 89, 1) 100%);
+            position: sticky;
+            height: 50px;
+            width: 100%;
+            box-shadow: 1px 1px 5px #000000;
+            color: white;
+        }
+        
+        .main {
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px #000;
+        }
+        
+        .imgc {
+            background-color: violet;
+            height: 400px;
+            width: 300px;
+            z-index: 1;
+            opacity: 0.6;
+            position: absolute;
+            top: 0px;
+        }
+        
+        .but {
+            border-style: none;
+            background-color: white;
+            text-shadow: 0px 0px 2px #52013a;
+        }
+        
+        .inputd {
+            border-style: solid;
+            border-radius: 5px;
+            font-size: medium;
+            border-color: #000;
+            height: 40px;
+            width: 200px;
+        }
+        
+        input:focus {
+            outline: none;
+        }
+        
+        input {
+            border-style: none;
+        }
+    </style>
+</head>
+
+<body background="bg.jfif">
+    <table style="width: 75%; background-color: #ffffff;" align="center">
+        <tr class="table">
+            <td>
+                <table align="center" class="nav">
+                    <tr>
+                        <td width="25%" align="center">
+                            <a href="info.html">
+                                <div class="link">Home</div>
+                            </a>
+                        </td>
+                        <td width="25%" align="center">
+                            <a href="achiv.html">
+                                <div class="link">Achievements</div>
+                            </a>
+                        </td>
+                        <td width="25%" align="center">
+                            <a href="contact.html">
+                                <div class="link">Contact Info</div>
+                            </a>
+                        </td>
+                        <td width="25%" align="center">
+                            <a href="ability.html">
+                                <div class="link">Abilities</div>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td width="100%" align="center">
+                <h1>CONTACT</h1>
+            </td>
+        </tr>
+
+        <tr>
+            <td align="center">
+                <form>
+                    <div onclick='fn()' class='inputd' id="fn">
+                        <input class="input" type="text" name='fn' value="First Name"></div><br><br>
+                    <div onclick='ln()' class='inputd' id="ln">
+                        <input class='input' type="text" id="ln" name='ln' value="Last Name"></div><br><br>
+                    <div onclick='e()' class='inputd' id="e">
+                        <input class='input' type="email" id="e" name='e' value="Email"></div><br><br>
+                    <div onclick='t()' class='inputd' id="t">
+                        <input class='input' type="text" id="t" name='t' value="Your message"></div>
+                </form>
+                <button class='but' onclick="sub()"><h2>Submit</h2></button>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: #1f1f1f;">
+                <div style="color: #ffffff;">
+                    <p align="center">Email : ali.aghayari@hotmail.com<br>phone : +98 912 1234 567 <br><a href="https://stackoverflow.com/users/17444227/ali-aghayari">stackoverflow</a><br><a href="https://github.com/Ali0281">github</a></p>
+                </div>
+
+            </td>
+        </tr>
+    </table>
+    <script>
+        function fn() {
+            document.getElementById('fn').style = 'border-right: none;border-left: none;border-top: none;border-width: none;border-bottom-color: #52013a; width:250px;'
+            document.getElementById('ln').style = 'border-style: solid;border-radius: 5px;font-size: medium;border-color: #000;height: 40px;width: 200px;'
+            document.getElementById('e').style = 'border-style: solid;border-radius: 5px;font-size: medium;border-color: #000;height: 40px;width: 200px;'
+            document.getElementById('t').style = 'border-style: solid;border-radius: 5px;font-size: medium;border-color: #000;height: 40px;width: 200px;'
+        }
+
+        function ln() {
+            document.getElementById('ln').style = 'border-right: none;border-left: none;border-top: none;border-width: none;border-bottom-color: #52013a; width:250px;'
+            document.getElementById('fn').style = 'border-style: solid;border-radius: 5px;font-size: medium;border-color: #000;height: 40px;width: 200px;'
+            document.getElementById('e').style = 'border-style: solid;border-radius: 5px;font-size: medium;border-color: #000;height: 40px;width: 200px;'
+            document.getElementById('t').style = 'border-style: solid;border-radius: 5px;font-size: medium;border-color: #000;height: 40px;width: 200px;'
+        }
+
+        function e() {
+            document.getElementById('e').style = 'border-right: none;border-left: none;border-top: none;border-width: none;border-bottom-color: #52013a; width:250px;'
+            document.getElementById('ln').style = 'border-style: solid;border-radius: 5px;font-size: medium;border-color: #000;height: 40px;width: 200px;'
+            document.getElementById('fn').style = 'border-style: solid;border-radius: 5px;font-size: medium;border-color: #000;height: 40px;width: 200px;'
+            document.getElementById('t').style = 'border-style: solid;border-radius: 5px;font-size: medium;border-color: #000;height: 40px;width: 200px;'
+        }
+
+        function t() {
+            document.getElementById('t').style = 'border-right: none;border-left: none;border-top: none;border-width: none;border-bottom-color: #52013a; width:250px;'
+            document.getElementById('ln').style = 'border-style: solid;border-radius: 5px;font-size: medium;border-color: #000;height: 40px;width: 200px;'
+            document.getElementById('e').style = 'border-style: solid;border-radius: 5px;font-size: medium;border-color: #000;height: 40px;width: 200px;'
+            document.getElementById('fn').style = 'border-style: solid;border-radius: 5px;font-size: medium;border-color: #000;height: 40px;width: 200px;'
+        }
+
+        function sub() {
+            var x = confirm("Confirm submition");
+            if (x == true) {
+                alert('submition compelet');
+            }
+        }
+    </script>
+</body>
+
+</html>
